@@ -16,9 +16,10 @@ app.use(require('./routes/web'))
 app.use(require('./routes/route'))
 
 //Connect To Database
+DATABASE = "mongodb+srv://mongo:co1on3on58k87KBH@cluster0.3vetls5.mongodb.net/Company"
 const connectDB = async () => {
     try{
-        await mongoose.connect(process.env.DATABASE);
+        await mongoose.connect(DATABASE);
         console.log('MongoDB connected')
         const Port = process.env.PORT || 8000;
         const sever=app.listen(Port,() => {

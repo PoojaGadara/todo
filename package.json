@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": " DATABASE = mongodb+srv://mongo:co1on3on58k87KBH@cluster0.3vetls5.mongodb.net/Company node app.js",
+    "start": " node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
   },
